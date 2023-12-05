@@ -39,7 +39,7 @@ function adicionaLinha(){
         linhas += linha; //somar notas e fazer a media
 
     }
-    
+
     inputNomeAtividade.value = ''; //depois que enviar o campo fica vazio de novo
     inputNotaAtividade.value = ''; //depois que enviar o campo fica vazio de novo
 }
@@ -52,7 +52,7 @@ function atualizaTabela (){
 function atualizaMediaFinal(){
     const mediaFinal = calculaMediaFinal();  
     
-    document.getElementById('media-final-valor').innerHTML = mediaFinal;
+    document.getElementById('media-final-valor').innerHTML = mediaFinal.toFixed(2);
     document.getElementById('media-final-resultado').innerHTML = mediaFinal >= notaMinima ? spanAprovado : spanReprovado;
 }
 
