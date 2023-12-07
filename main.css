@@ -2,11 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
 }
 
 body{
-    background-color: #e7e7e7; /*cor de fundo*/
+    background-color:  #ffcb04; ; /*cor de fundo*/
     padding-top: 100px; /*margem topo da pagina*/
 }
 
@@ -17,13 +16,14 @@ header {
 }
 
 header img {
-    height: 36px; /*Tamanho da imagem*/
+    height: 40px; /*Tamanho da imagem*/
     margin-right: 16px; /*margem a direita da imagem*/
 }
 
 header h1 {
-    font-size: 40px;
+    font-size: 55px;
     font-weight: bold; /*deixar negrito*/
+    font-family: 'Dhurjati', sans-serif;
 }
 
 .container {
@@ -34,7 +34,7 @@ header h1 {
 
 form {
     display: flex; /*para alinhar os elementos*/
-    max-width: 640px; /*Espaço que vao ocupar*/
+    max-width: 960px; /*Espaço que vao ocupar*/
     width: 100%;
     justify-content: space-between; /*igualar o espaço entre os elementos*/
     margin-bottom: 56px; /*Margem inferior (separando formulario da tabela)*/
@@ -49,12 +49,12 @@ form input {
 }
 
 form button{
-    background-color: #009432; /*cor do fundo do botão*/
+    background-color: #000000; /*cor do fundo do botão*/
     color: #fff; /*cor da fonte do botão*/
     font-size: 24px; /*tamanho da fonte*/
     font-weight: bold; /*negrito*/
     border: none; /*remover borda*/
-    cursor: pointer; /*Cursor do mouse (mãozinha con indicador*/
+    cursor: pointer; /*Cursor do mouse (mãozinha com indicador*/
     padding: 8px; /*Espaço entre os elementos*/
 }
 
@@ -65,33 +65,14 @@ table {
 table th { /*modificando nome das colunas*/
     border-bottom: 2px solid #000; /*borda entre os elementos*/
     padding: 16px; /*Espaçamento*/
-    font-size: 24px; /*Fonte */
+    font-size: 30px; /*Fonte */
     font-weight: bold; /*negrito*/
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 table td{ /*modificando texto das linhas da tabela*/
     padding: 16px 0; /*somente espaço de 8px na parte superior e inferior... nas laterias 0 zero*/
     text-align: center; /*Alinha os textos das colunas e linhas*/
     font-size: 18px;
-    border-bottom: 1px solid rgba(0,0,0,0.5); /*colocamos um separador nas linhas... na cor preta quase transparente*/
-}
-
-table td img{ /*modificando imagem da tabela (emoji)*/
-    width: 30px;
-}
-
-.resultado { /*modificando condição da nota (aprovado ou não?*/
-    padding: 8px; /*espaçamento*/
-    font-weight: bold; /*negrito*/
-    color: #fff; /*cor*/
-    background-color: #000; /*Cor de fundo*/
-    border-radius: 3px; /*Deixa as botas arredondadas envolta*/
-}
-
-.aprovado { /*classe para o texto e fundo mudar de acordo com a condição da nota aprovado ou reprovado*/
-    background-color: #009432;
-}
-
-.reprovado { /*classe para o texto e fundo mudar de acordo com a condição da nota aprovado ou reprovado*/
-    background-color: #940000;
+    border-bottom: 1px solid #0c0000; /*colocamos um separador nas linhas... na cor preta quase transparente*/
 }
